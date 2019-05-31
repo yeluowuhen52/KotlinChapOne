@@ -77,4 +77,27 @@ fun main(args: Array<String>) {
     var len2 = strTest?.length ?: -1;
 
     println(len2);
+
+    var strCrazy = "fkkit";
+    println(strCrazy[1]);
+
+    for (c in strCrazy) {
+        print("${c} ")
+    }
+
+    val txt = """
+        |床前明月光,
+        |疑是地上霜,
+        |举头望明月,
+        |低头思故乡。
+    """.trimMargin()
+    println(txt);
+
+    val myTxt = """
+        ^床前明月光,
+        ^疑是地上霜,
+        ^举头望明月,
+        ^低头思故乡。
+    """.trimMargin("^")
+    println(myTxt);
 }
