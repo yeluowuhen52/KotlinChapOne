@@ -100,4 +100,21 @@ fun main(args: Array<String>) {
         ^低头思故乡。
     """.trimMargin("^")
     println(myTxt);
+
+
+    var ran = java.util.Random();
+    println("随机数是：${ran.nextInt(10)}");
+
+    val s1 = "123.123";
+    val d:Double = s1.toDouble();
+    println(d);
+
+
+    //首字母大小写
+    var firstStr = "Fkiitt";
+    println(firstStr.decapitalize());
+
+    var comnmonStr = "crazy.org";
+    println(comnmonStr.commonPrefixWith("crazy.txt"));
+    println(comnmonStr.commonSuffixWith("aa.org"));
 }
