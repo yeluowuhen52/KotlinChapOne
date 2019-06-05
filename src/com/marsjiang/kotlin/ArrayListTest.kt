@@ -8,7 +8,6 @@ package com.marsjiang.kotlin
  * @Version: 1.0
  * @Update:
  */
-
 fun main(args: Array<String>) {
     var list = listOf("Java", "Kotlin", null, "Go");
     for (temp in list) {
