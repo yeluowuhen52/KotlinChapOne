@@ -11,13 +11,13 @@ package com.marsjiang.kotlin
 
 fun main(args: Array<String>) {
     var list = listOf("Java", "Kotlin", null, "Go");
-    for(temp in list){
+    for (temp in list) {
         println(temp)
     }
 
-    println(list.subList(0,2));
+    println(list.subList(0, 2));
 
-    var mulList  = mutableListOf<String>();
+    var mulList = mutableListOf<String>();
     mulList.add("Java");
     mulList.add("Go");
     mulList.add("C++");
@@ -25,7 +25,15 @@ fun main(args: Array<String>) {
 
     mulList.removeAt(0);
 
-    for(temp in mulList){
+    var it = mulList.iterator();
+    while (it.hasNext()) {
+        var e = it.next();
+        println(e);
+        if (e.length <= 2) {
+            it.remove();
+        }
+    }
+    for (temp in mulList) {
         println(temp)
     }
 
